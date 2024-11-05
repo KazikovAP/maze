@@ -30,67 +30,31 @@ go run cmd/maze/main.go
 Welcome to the Maze Game!
 Enter maze width (default: 15): 
 "Invalid width input, using default = 15"
-Enter maze height (default: 15):         
+Enter maze height (default: 15):
 "Invalid height input, using default = 15"
-Choose maze generation algorithm (1 - Prim, 2 - Kruskal, default Prim): 
-"Invalid choice, using default Prim generation algorithm"    
-Choose pathfinding algorithm (1 - BFS, 2 - A*, default BFS): 
-"Invalid choice, using default BFS pathfinding algorithm"        
+Choose maze generation algorithm (1 - Prim, 2 - Kruskal, default Prim):
+"Invalid choice, using default Prim generation algorithm"
+Choose pathfinding algorithm (1 - BFS, 2 - A*, default BFS):
+"Invalid choice, using default BFS pathfinding algorithm"
 Generating a 15x15 maze using Prim generation and BFS pathfinding
-Start: {1 2}, End: {13 9}
+Start: {1 4}, End: {13 13}
 Path found using BFS!
 
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-▓   ▓ ▓ ▓▓▓   ▓
-▓S▓      ▓ ▓ ▓▓
-▓ ▓ ▓▓ ▓      ▓
-▓  ▓ ▓  ▓ ▓▓ ▓▓
-▓▓    ▓ ▓   ▓ ▓
-▓  ▓ ▓  ▓ ▓   ▓
-▓▓  ▓▓ ▓  ▓ ▓ ▓
-▓  ▓  ▓▓ ▓   ▓▓
-▓ ▓ ▓   ▓  ▓ E▓
-▓     ▓  ▓  ▓ ▓
-▓ ▓ ▓▓▓ ▓▓▓ ▓ ▓
-▓▓     ▓ ▓ ▓  ▓
-▓▓▓ ▓▓      ▓ ▓
+▓       ▓ ▓▓▓ ▓
+▓ ▓ ▓ ▓    ▓  ▓
+▓  ▓   ▓ ▓▓ ▓ ▓
+▓S▓ ▓ ▓▓      ▓
+▓ ▓     ▓ ▓▓▓ ▓
+▓  ▓ ▓ ▓▓    ▓▓
+▓ ▓  ▓   ▓ ▓  ▓
+▓ ▓ ▓ ▓ ▓   ▓ ▓
+▓  ▓    ▓ ▓▓ ▓▓
+▓▓ ▓▓ ▓ ▓    ▓▓
+▓    ▓ ▓ ▓ ▓  ▓
+▓▓▓ ▓     ▓ ▓ ▓
+▓     ▓ ▓   ▓E▓
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-```
-```
-Welcome to the Maze Game!
-Enter maze width (default: 15): 25
-Enter maze height (default: 15): 25
-Choose maze generation algorithm (1 - Prim, 2 - Kruskal, default Prim): 2
-Choose pathfinding algorithm (1 - BFS, 2 - A*, default BFS): 2
-Generating a 25x25 maze using Kruskal generation and A* pathfinding
-Start: {1 10}, End: {23 20}
-Path found using BFS!
-
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-▓     ▓     ▓   ▓ ▓   ▓ ▓
-▓▓▓ ▓ ▓ ▓ ▓▓▓ ▓ ▓ ▓ ▓▓▓ ▓
-▓   ▓ ▓ ▓ ▓ ▓ ▓   ▓     ▓
-▓ ▓▓▓ ▓ ▓▓▓ ▓▓▓ ▓▓▓▓▓ ▓▓▓
-▓ ▓     ▓ ▓ ▓ ▓     ▓   ▓
-▓▓▓ ▓ ▓▓▓ ▓ ▓ ▓▓▓ ▓▓▓▓▓ ▓
-▓ ▓ ▓   ▓   ▓ ▓     ▓   ▓
-▓ ▓▓▓ ▓ ▓▓▓ ▓ ▓▓▓▓▓ ▓ ▓ ▓
-▓   ▓ ▓       ▓     ▓ ▓ ▓
-▓S▓ ▓▓▓▓▓ ▓▓▓ ▓ ▓▓▓▓▓ ▓ ▓
-▓ ▓ ▓   ▓ ▓   ▓       ▓ ▓
-▓ ▓ ▓▓▓ ▓▓▓ ▓▓▓▓▓ ▓ ▓ ▓▓▓
-▓     ▓         ▓ ▓ ▓   ▓
-▓ ▓▓▓▓▓▓▓▓▓ ▓▓▓ ▓ ▓▓▓▓▓▓▓
-▓ ▓         ▓ ▓     ▓   ▓
-▓ ▓▓▓ ▓▓▓▓▓ ▓ ▓ ▓ ▓▓▓▓▓ ▓
-▓     ▓       ▓ ▓ ▓     ▓
-▓ ▓▓▓▓▓ ▓ ▓ ▓ ▓▓▓ ▓▓▓ ▓▓▓
-▓ ▓     ▓ ▓ ▓ ▓         ▓
-▓ ▓▓▓▓▓ ▓▓▓ ▓ ▓▓▓▓▓ ▓ ▓E▓
-▓     ▓   ▓ ▓   ▓   ▓ ▓ ▓
-▓ ▓ ▓ ▓▓▓▓▓▓▓ ▓▓▓ ▓ ▓▓▓ ▓
-▓ ▓ ▓   ▓     ▓   ▓     ▓
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ```
 ```
 Welcome to the Maze Game!
@@ -99,30 +63,65 @@ Enter maze height (default: 15): 20
 Choose maze generation algorithm (1 - Prim, 2 - Kruskal, default Prim): 1
 Choose pathfinding algorithm (1 - BFS, 2 - A*, default BFS): 2
 Generating a 20x20 maze using Prim generation and A* pathfinding
-Start: {1 2}, End: {18 2}
-Path found using BFS!
+Start: {1 12}, End: {18 1}
+Path found using A*!
 
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-▓         ▓  ▓  ▓  ▓
-▓S▓ ▓ ▓ ▓   ▓ ▓   E▓
-▓▓  ▓▓ ▓▓ ▓     ▓  ▓
-▓ ▓      ▓▓▓ ▓▓▓▓ ▓▓
-▓ ▓ ▓ ▓▓  ▓▓     ▓ ▓
-▓    ▓   ▓   ▓▓▓▓  ▓
-▓ ▓ ▓ ▓ ▓  ▓     ▓ ▓
-▓  ▓  ▓ ▓▓  ▓ ▓ ▓  ▓
-▓ ▓ ▓ ▓   ▓▓▓▓    ▓▓
-▓      ▓ ▓  ▓ ▓ ▓  ▓
-▓ ▓ ▓ ▓    ▓     ▓ ▓
-▓▓  ▓  ▓ ▓ ▓ ▓▓ ▓  ▓
-▓  ▓  ▓▓  ▓  ▓   ▓ ▓
-▓ ▓ ▓   ▓ ▓ ▓  ▓  ▓▓
-▓   ▓ ▓ ▓ ▓  ▓ ▓▓  ▓
-▓▓ ▓  ▓  ▓  ▓    ▓ ▓
-▓   ▓ ▓ ▓ ▓ ▓▓ ▓  ▓▓
-▓ ▓ ▓ ▓   ▓  ▓  ▓  ▓
+▓ ▓ ▓  ▓   ▓   ▓▓▓E▓
+▓     ▓ ▓ ▓▓ ▓▓ ▓  ▓
+▓ ▓ ▓▓▓           ▓▓
+▓ ▓     ▓ ▓ ▓▓ ▓ ▓ ▓
+▓  ▓ ▓▓ ▓  ▓ ▓  ▓  ▓
+▓ ▓  ▓   ▓ ▓   ▓  ▓▓
+▓  ▓ ▓ ▓ ▓  ▓▓  ▓ ▓▓
+▓▓ ▓ ▓ ▓ ▓ ▓  ▓    ▓
+▓   ▓   ▓    ▓▓▓ ▓ ▓
+▓▓ ▓▓ ▓  ▓ ▓ ▓▓▓ ▓▓▓
+▓▓ ▓ ▓  ▓ ▓   ▓    ▓
+▓S    ▓ ▓ ▓ ▓  ▓ ▓ ▓
+▓ ▓▓ ▓▓ ▓    ▓ ▓  ▓▓
+▓ ▓ ▓▓  ▓ ▓ ▓   ▓  ▓
+▓     ▓▓   ▓ ▓ ▓ ▓ ▓
+▓ ▓▓▓ ▓  ▓ ▓      ▓▓
+▓   ▓ ▓▓ ▓  ▓▓ ▓ ▓ ▓
+▓ ▓  ▓   ▓ ▓   ▓   ▓
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+```
+```
+Welcome to the Maze Game!
+Enter maze width (default: 15): 25
+Enter maze height (default: 15): 25
+Choose maze generation algorithm (1 - Prim, 2 - Kruskal, default Prim): 2
+Choose pathfinding algorithm (1 - BFS, 2 - A*, default BFS): 2
+Generating a 25x25 maze using Kruskal generation and A* pathfinding
+Start: {1 8}, End: {23 9}
+Path found using A*!
 
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+▓   ▓ ▓     ▓   ▓       ▓
+▓▓▓ ▓ ▓▓▓▓▓ ▓ ▓▓▓ ▓▓▓ ▓ ▓
+▓   ▓         ▓   ▓ ▓ ▓ ▓
+▓▓▓ ▓▓▓▓▓ ▓ ▓▓▓ ▓▓▓ ▓▓▓ ▓
+▓ ▓     ▓ ▓     ▓     ▓ ▓
+▓ ▓▓▓ ▓▓▓▓▓ ▓ ▓▓▓ ▓ ▓▓▓▓▓
+▓ ▓ ▓   ▓ ▓ ▓     ▓     ▓
+▓S▓ ▓ ▓ ▓ ▓▓▓ ▓ ▓ ▓▓▓ ▓▓▓
+▓ ▓   ▓ ▓ ▓   ▓ ▓   ▓  E▓
+▓ ▓▓▓▓▓ ▓ ▓▓▓ ▓ ▓▓▓▓▓ ▓ ▓
+▓   ▓     ▓   ▓ ▓ ▓ ▓ ▓ ▓
+▓ ▓ ▓ ▓ ▓▓▓▓▓ ▓ ▓ ▓ ▓ ▓ ▓
+▓ ▓ ▓ ▓ ▓     ▓     ▓ ▓ ▓
+▓ ▓▓▓▓▓ ▓▓▓ ▓▓▓ ▓ ▓▓▓▓▓ ▓
+▓       ▓ ▓ ▓   ▓     ▓ ▓
+▓ ▓▓▓▓▓ ▓ ▓▓▓▓▓▓▓ ▓ ▓ ▓▓▓
+▓   ▓             ▓ ▓   ▓
+▓▓▓▓▓ ▓ ▓▓▓▓▓▓▓▓▓▓▓▓▓ ▓▓▓
+▓     ▓   ▓ ▓           ▓
+▓ ▓▓▓▓▓ ▓▓▓ ▓▓▓▓▓▓▓▓▓ ▓ ▓
+▓     ▓     ▓ ▓ ▓   ▓ ▓ ▓
+▓ ▓▓▓▓▓ ▓▓▓ ▓ ▓ ▓▓▓ ▓ ▓ ▓
+▓ ▓     ▓         ▓   ▓ ▓
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ```
 
 ---

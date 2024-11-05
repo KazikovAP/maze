@@ -42,11 +42,11 @@ func NewApp(cfg *config.Config, io *infrastructure.IOAdapter) *App {
 
 func (a *App) Start() error {
 	a.greetUser()
-	a.initializeMaze()
+	pathAlgo := a.initializeMaze()
 
 	start, end := a.maze.SetStartAndEndPoints()
 	path, found := a.pathfinder.FindPath(a.maze, start, end)
-	a.outputPathResult(found)
+	a.outputPathResult(found, pathAlgo)
 
 	if found {
 		a.markPath(path)
@@ -57,7 +57,7 @@ func (a *App) Start() error {
 	return nil
 }
 
-func (a *App) initializeMaze() {
+func (a *App) initializeMaze() string {
 	width := a.validateDimension(a.InputWidth(a.cfg.MazeWidth), 60)
 	height := a.validateDimension(a.InputHeight(a.cfg.MazeHeight), 30)
 	genAlgo := a.InputGenerationAlgorithm(a.cfg.GenerationAlgorithm)
@@ -69,6 +69,8 @@ func (a *App) initializeMaze() {
 	a.selectPathfinder(pathAlgo)
 
 	a.summaryInformation(width, height, genAlgo, pathAlgo)
+
+	return pathAlgo
 }
 
 func (a *App) InputWidth(defaultWidth int) int {
@@ -187,11 +189,11 @@ func (a *App) summaryInformation(width, height int, genAlgo, pathAlgo string) {
 	a.io.Output(fmt.Sprintf("Generating a %dx%d maze using %s generation and %s pathfinding\n", width, height, genAlgo, pathAlgo))
 }
 
-func (a *App) outputPathResult(found bool) {
+func (a *App) outputPathResult(found bool, pathAlgo string) {
 	if found {
-		a.io.Output(fmt.Sprintf("Path found using %s!\n", a.cfg.PathfindingAlgorithm))
+		a.io.Output(fmt.Sprintf("Path found using %s!\n", pathAlgo))
 	} else {
-		a.io.Output(fmt.Sprintf("No path found using %s.\n", a.cfg.PathfindingAlgorithm))
+		a.io.Output(fmt.Sprintf("No path found using %s.\n", pathAlgo))
 	}
 }
 
